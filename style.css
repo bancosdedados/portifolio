@@ -1,0 +1,520 @@
+/* ESTILO GERAL */
+
+* {
+    /*Resetar o Documento html (Todos os elementos serão zerados) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Para que todos os elementos fique dentro da caixa*/
+}
+
+
+body {
+    background-color: black;
+    /*Mudar a Cor do Fundo do site*/
+    height: 100vh;
+}
+
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    /*Ficar Centralizado na tela */
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    /* Aumentar o espaçamento (cima,baixo) do button*/
+    font-size: 18px;
+    font-weight: 600;
+    /*Aumentar o peso da fonte*/
+    background-color: white;
+    border: 0;
+    /*Para que ele não tenha nenhuma borda */
+    border-radius: 30px;
+    /*Arredondar a borda*/
+    cursor: pointer;
+    /*Alterar quando a seta passar em cima do button*/
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #089af4;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #089af4;
+    transform: scale(1.5);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+    /* */
+}
+
+header>.interface {
+    /* o sinal de maior vai procuar os elementos da classe interface dentro da tag header */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a {
+    color: rgb(128, 125, 125);
+    /*Mudar a Cor da Fonte do elemento*/
+    text-decoration: none;
+    /*Sumir o sublinhado em baixo dos items */
+    display: inline-block;
+    transition: .2s;
+    /*definir o tempo de Transação ao passar o mouse*/
+}
+
+header a:hover {
+    /*Quando passar o mouse em cima vai acontecer alguma coisa...*/
+    color: #fff;
+    transform: scale(1.05);
+    /**/
+}
+
+header nav ul {
+    list-style: none;
+    /*Ocultar as bolinhas do list*/
+}
+
+
+header nav ul li {
+    display: inline-block;
+    /*Colocar os Items lado a lado*/
+    padding: 40px;
+    /* Espaçamento entre os Items*/
+
+}
+
+
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #089af4;
+    transform: scale(1.5);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px 4px;
+
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 34px;
+    line-height: 40px;
+
+}
+
+.topo-do-site h1 span {
+    color: #089af4;
+    font-size: 64px;
+}
+
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section.especiliadades {
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0a6fae;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 70px;
+    color: #089af4;
+
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+/* ESTILO DO SOBRE */
+
+section.sobre {
+    padding: 80px 4%;
+    /*40px espaçamento entre em CIMA e BAIXO e 0 vai representar o espaço dos lados*/
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #089af4;
+    display: block;
+    /*Jogar a linha pra baixo*/
+}
+
+
+.sobre .txt-sobre p {
+    margin: 25px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #089af4;
+    font-size: 23px;
+    /*Aumentar o tamanho dos icones*/
+    cursor: pointer;
+    margin: 0 8px;
+    /*0 em cima e baixo e 10px de espaço entre os items*/
+    transition: 2.s;
+}
+
+
+/* ESTILO DO PORTIFÓLIO */
+
+section.portifolio {
+    padding: 80px 0;
+    box-shadow: 0 0 40px 10px #119ff7;
+}
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000042;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+
+section.formulario {
+    padding: 80px 4px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*Os Elementos vai ficar um em baixo do outro*/
+    gap: 10px;
+    /*Criar um 
+    distanciamento entre os elementos*/
+    margin-top: 40px;
+
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #6e6969;
+    border: 0;
+    /*Remover a Borda*/
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15;
+    color: #f8dfdf;
+    font-size: 22px;
+
+
+}
+
+form textarea::placeholder {
+    /* Alterar o campo de mensagem do textarea*/
+    color: #089af4;
+}
+
+
+
+form input::placeholder
+
+/*Alterar o campo do texto*/
+    {
+    color: #1ca9d8;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    /*Vai parar de 
+redirecionar o campo do texto*/
+    max-height: 2000px;
+}
+
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #089af4;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    transition: .2s;
+
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #6e69695e;
+    /*Sublihado em cima do espaçamento*/
+}
+
+footer .flex {
+    justify-content: space-between;
+    /*Esse justify so funciona na classe flex */
+}
+
+.borda {
+    border-top: 2px solid #089af4;
+    /*Vai fazer uma linha e pode alterar ela*/
+}
+
+footer .line-footer {
+    padding: 20px 0;
+
+}
+
+footer .line-footer p i {
+    color: #089af4;
+    font-size: 22px;
+
+}
+
+footer .line-footer p a {
+    color: white;
+}
+
+
+/* Reponsivo do Site Adpatar o Tamanho da tela para mobile*/
+
+
+@media screen and (max-width:1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column-reverse;
+
+    }
+
+
+    h2.titulo {
+        font-size: 34px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    /* o flex vai definir a direção que vai ficar os elementos */
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+
+
+    }
+
+    section.topo-do-site {
+        padding: 20px 7%;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 80%;
+        height: 80%;
+    }
+
+    /* ESTILO DAS ESPECIALIDADES */
+
+    section.especiliadades {
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    
+section.sobre {
+    padding: 80px 8%;
+}
+.sobre .txt-sobre h2 {
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.btn-social {
+    text-align: center;
+}
+
+.img-sobre {
+    width: 100%;
+}
+
+/* PORTIFÓLIO */
+section.portifolio {
+    padding: 80px 8%;
+}
+
+.img-port {
+    width: 100%;
+    max-width: 360px;
+    height: 460px;
+}
+section.portifolio .flex {
+    gap: 60px;
+
+}
+
+/* Formulário */
+form input,
+form textarea {
+    border-radius: 10px;    
+}
+
+/* RODAPÉ */
+
+
+footer .flex {
+    flex-direction: column;
+    gap: 30px;
+}
+footer .line-footer {
+    text-align: center;
+}
+}
+
+/* Tudo que for aplicado nessa linha de comando só terá efeito quando o meu site estiver em 1020px de largura */
